@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {      //버튼 클릭시 2번째 메인 액티비티로 넘기기 위한 intent함수 사용
-                String height = edtHeight.getText().toString();
+                String height = edtHeight.getText().toString(); //String객체로 Text를 리턴
                 String weight = edtWeight.getText().toString();
 
                 Intent intent = new Intent(getApplicationContext(), MainActivity2.class);

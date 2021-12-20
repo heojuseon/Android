@@ -48,7 +48,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         textView.setText(String.valueOf(Bmi));  // Bmi값은 double형이여서 형변환 해주어야 함
 
-        Log.d("height", String.valueOf(height)); //Log값 출력
+        Log.d("height", String.valueOf(height)); //Log값 출력(확인하기 위함)
         Log.d("weight" , String.valueOf(weight));
 
         button2.setOnClickListener(new View.OnClickListener() {    //2번째 메인 액티비티에서 다시 메인 액티비티로 넘기기 위한 메소드
@@ -59,7 +59,7 @@ public class MainActivity2 extends AppCompatActivity {
                 intent.putExtra("username", "hjs");
                 setResult(RESULT_OK, intent);
                 finish();
-                Log.d("username", "hjs");
+                Log.d("username", "hjs");   //Log값 출력(확인하기 위함)
             }
         });
     }
